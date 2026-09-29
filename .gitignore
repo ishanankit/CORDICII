@@ -1,0 +1,99 @@
+# ==============================================================================
+# Vivado / Vitis Combined Master .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Vivado Generated Build Directories & Files
+# ------------------------------------------------------------------------------
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.gen/
+*.cache/
+*.ioplanning/
+*.jobs/
+*.srcs/sources_1/bd/*/hdl/
+*.srcs/sources_1/bd/*/*.xml
+
+# Vivado Log, Journal, and Temporary Files
+*.log
+*.jou
+*.pb
+*.str
+*.backup.log
+*.backup.jou
+*.rpt
+*.dmp
+vivado*.str
+vivado*.zip
+
+# Synthesis & Implementation Output Artifacts (keep source, drop builds)
+*.bit
+*.bin
+*.pdi
+*.sysdef
+*.dcp
+*.hdf
+
+# Hardware Platform Export (Keep .xsa only if committed as a static artifact; otherwise ignore generated ones)
+# *.xsa
+
+# ------------------------------------------------------------------------------
+# 2. Vitis / HLS Workspace & Build Directories
+# ------------------------------------------------------------------------------
+# Vitis Classic & Unified IDE Workspaces
+.Xil/
+.analytics/
+*_ide_standalone/
+*_system/
+*_system_builder/
+vitis_workspace/
+.metadata/
+.plugins/
+.launches/
+
+# High-Level Synthesis (HLS) Build Folders
+*_prj/
+*_hls/
+hls.app/
+vitis_hls.log
+
+# Software Build Executables & Objects
+*.elf
+*.o
+*.a
+*.so
+*.out
+*.o.d
+
+# ------------------------------------------------------------------------------
+# 3. User-Specific & Local Configuration Files
+# ------------------------------------------------------------------------------
+# Local GUI/Layout states
+*.user
+*.xml.gui
+.Xilinx/
+
+# OS / Editor Specific Junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ------------------------------------------------------------------------------
+# 4. Whitelist Rules (DO NOT IGNORE IMPORTANT SOURCES)
+# ------------------------------------------------------------------------------
+!*.xpr
+!*.tcl
+!*.v
+!*.sv
+!*.vhd
+!*.vhdl
+!*.xdc
+!*.xci
+!*.bd
+!*.c
+!*.cpp
+!*.h
+!*.hpp
